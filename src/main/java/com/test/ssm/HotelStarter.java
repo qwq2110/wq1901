@@ -9,6 +9,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class HotelStarter {
     public static void main(String[] args) {
+
         SpringApplication.run(HotelStarter.class, args);
     }
+    //我真实太厉害了
+
 }
