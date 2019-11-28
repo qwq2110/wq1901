@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.test.ssm.dao.HotelDAO">
+    <insert id="addHotel" parameterType="Hotel">
+        INSERT INTO hotel (name, address, price, lat, lng, image, info)
+        VALUES (#{name}, #{address}, #{price}, #{lat}, #{lng}, #{image}, #{info})
+    </insert>
+
+    <select id="getHotelById" resultType="Hotel">
+        SELECT
+            id,
+            name,
+            address,
+            price,
+            lat,
+            lng,
+            image,
+            info
+        FROM hotel
+        WHERE id = #{id}
+    </select>
+</mapper>
+    

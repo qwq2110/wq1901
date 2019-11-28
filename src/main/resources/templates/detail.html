@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img th:src="${hotel.image}">
+<div th:text="${hotel.name}"></div>
+<div th:text="${hotel.price}"></div>
+<div th:utext="${hotel.info}"></div>
+</body>
+</html>
